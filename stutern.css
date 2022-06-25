@@ -1,0 +1,606 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --white: #fff;
+    --black: #333;
+    --ligh-green2: #00d1d1;
+    --light-green: #00a3a3;
+    --dark-blue: #000033;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+ul{
+    list-style-type: none;
+}
+p{
+    letter-spacing: 0.1px;
+}
+a{
+    text-decoration: none;
+    font-weight: 400;
+}
+header{
+    background-color: var(--white);
+    color: var(--black);
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 400px;
+}
+
+/* Utilities */
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr );
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+/* Navigation */
+
+header .container.flex{
+    justify-content: space-between;
+    margin: 15px 25px;
+}
+/*logo*/
+header .container .logo{
+    font-size: 20px;
+    color: var(--light-green);
+    letter-spacing: 0.5px;
+    margin-left: 10px;
+}
+header .container .logo span{
+    padding: 3px 6px;
+    background-color: var(--light-green);
+    color: var(--white);
+    border-radius: 8px;
+}
+/*nav*/
+header .nav .nav-1{
+    margin-right: 20px;
+
+}
+header .nav .nav-1 ul{
+    display: flex;
+}
+header .nav .nav-1 ul li{
+    padding: 20px;
+    margin-right: 20px;
+}
+header .nav .nav-1 ul li a{
+    color: var(--black);
+}
+header .nav .nav-2{
+    margin-left: 30px;
+
+}
+header .nav .nav-2 ul{
+    display: flex;
+}
+header .nav .nav-2 ul li a{
+    color: var(--black);
+}
+header .container a[href="login.html"]{
+    border: 2px solid var(--dark-blue);
+    padding: 10px 22px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+header .container a[href="login.html"]:hover{
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+header .container a[href="course.html"]{
+    background-color: var(--ligh-green2);
+    padding: 10px 22px;
+    border-radius: 4px;
+    margin: 0;
+    border: 2px solid var(--ligh-green2);
+    margin-right: 10px;
+}
+header .container a[href="course.html"]:hover{
+    background-color: #00c4c4;
+    border: 2px solid #00c4c4;
+}
+/* Showcase */
+.showcase{
+    width: 100%;
+    height: 900px;
+    background-color: #e6fff2;
+}
+
+.grid-container{
+    width: 100%;
+    padding-left: 100px;
+}
+
+.showcase-text{
+    width: 100%;
+    height: 65%;
+    margin-top: 170px;
+}
+.showcase-text a[href="scorlarship.html"]{
+    background-color: #ffc1c1;
+    color: var(--black);
+    padding: 10px 32px;
+    border: 1px solid #f3b9b9;
+    border-radius: 6px;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+}
+.showcase-text a[href="scorlarship.html"]:hover{
+    border: none;
+}
+.showcase-text h1{
+    font-size: 75px;
+    color: var(--dark-blue);
+    margin: 20px 0;
+}
+.showcase-text p{
+    letter-spacing: 0.1px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+.showcase-text a[href="course.html"]{
+    background-color: var(--ligh-green2);
+    padding: 10px 37px;
+    border-radius: 4px;
+    margin: 0;
+    border: 2px solid var(--ligh-green2);
+    margin-right: 10px;
+    color: var(--black);
+    font-weight: 500;
+}
+.showcase-text a[href="course.html"]:hover{
+    background-color: #00c4c4;
+    border: 2px solid #00c4c4;
+}
+.showcase-image{
+    width: 100%;
+    display: flex;
+    position: relative;
+    top: 95px;
+    right: 60px;
+}
+.showcase-image .girl-1,
+.showcase-image .girl-2{
+    width: 50%;
+}
+.showcase-image .girl-2{
+    position: relative;
+    top: 105px;
+    left: 25px;
+}
+/* Employ */
+.employ{
+    height: 600px;
+}
+.employ .container.grid{
+    overflow: visible;
+    padding-left: 80px;
+}
+.employ-text{
+    height: 60%;
+    margin-top: 100px;
+}
+.employ-text h1{
+    font-size: 50px;
+    color: var(--dark-blue);
+}
+.employ-text h1 .years{
+    text-decoration: line-through;
+}
+.employ-text h1 .month{
+    color: var(--ligh-green2);
+}
+.employ-text p{
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.employ-text a[href="course.html"]{
+    background-color: var(--ligh-green2);
+    padding: 10px 25px;
+    border-radius: 4px;
+    margin: 0;
+    border: 2px solid var(--ligh-green2);
+    margin-right: 10px;
+    color: var(--black);
+    font-weight: 500;
+}
+.employ-text a[href="course.html"]:hover{
+    background-color: #00c4c4;
+    border: 2px solid #00c4c4;
+}
+.employ .container img{
+    width: 80%;
+    justify-self: flex-end;
+    position: relative;
+    right: 50px;
+    margin-bottom: 20px;
+}
+
+/* Third */
+.third{
+}
+.third .container{
+    height: 60%;
+    text-align: center;
+    margin-top: 90px;
+}
+.third .container h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: var(--dark-blue);
+}
+
+/* Employees */
+.employees{
+    height: 600px;
+    margin-top: 50px;
+}
+.employees .container{
+    text-align: center;
+    line-height: 1.5;
+}
+.img-1{
+    grid-template-columns: repeat(4, 1fr);
+}
+.img-2{
+    margin-top: 50px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.employees img{
+    width: 50%;
+    border-radius: 50%;
+}
+.employees h3{
+    color: var(--dark-blue);
+    font-size: 21px;
+}
+.employees h5{
+    font-size: 12px;
+}
+
+/* Career */
+.career{
+    background-color: #0f0f4b;
+    height: 580px;
+}
+.career img{
+    width: 12%;
+    border-radius: 50%;
+    padding: 0 30px;
+}
+.career .container{
+    text-align: center;
+    padding-top: 20px;
+    height: 100%;
+    width: 100%;
+}
+.career .h3{
+    color: #e4e4e4;
+    font-size: 28.1px;
+    padding: 80px 120px;
+}
+.img-text{
+    color: #9c9c9c;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+}
+.img-text h3{
+    font-size: 20px;
+    color: #00ffff;
+    line-height: 1.5;
+}
+.img-text p{
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+}
+
+/* World */
+.world{
+    height: 450px;
+}
+.world .container{
+    text-align: center;
+    padding-top: 160px;
+}
+.world h1{
+    color: var(--dark-blue);
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.world p{
+    letter-spacing: 0.1px;
+}
+
+/* Talk */
+.talk{
+
+}
+.talk .container{
+}
+.talk .small-container{
+    margin: 40px;
+    padding: 180px 0;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #00d1d1;
+}
+.talk h1{
+    color: var(--dark-blue);
+    font-size: 50px;
+}
+.talk .btn{
+    margin-top: 50px;
+}
+.white{
+    padding: 15px;
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 4px;
+    font-size: 20px;
+}
+.blue{
+    padding: 15px;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 20px;
+}
+.white,
+.blue{
+    margin: 4px;
+}
+
+/* Footer */
+
+footer{
+    height: 450px;
+    background-color: #0f0f4b;
+}
+footer .container{
+    height: 100%;
+}
+footer .small-container{
+    line-height: 3;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+}
+footer .logo{
+    font-size: 20px;
+    color: #00c4c4;
+    letter-spacing: 0.5px;
+    margin-left: 10px;
+    margin-bottom: 90px;
+}
+footer .logo span{
+    padding: 3px 6px;
+    background-color: #00c4c4;
+    color: #0f0f4b;
+    border-radius: 8px;
+}
+.footer p a{
+    color: var(--white);
+}
+.footer{
+    color: #9c9c9c;
+    font-weight: bold;
+}
+.footer li a{
+    color: var(--white);
+    font-weight: normal;
+}
+/* Tablets */
+@media(max-width: 1000px){
+    header .container.flex{
+        flex-direction: column;
+        margin: 15px 25px;
+        text-align: center;
+    }
+    header .nav{
+        flex-direction: column;
+    }
+    header a{
+        font-size: 13px;
+    }
+
+
+    .grid-container{
+        padding: 40px;
+        grid-template-columns: 1fr;
+    }
+    .showcase{
+        height: 700px;
+    }
+    .showcase-image{
+        display: none;
+    }
+    .showcase-text a[href="scorlarship.html"]{
+        font-size: 13px;
+        padding: 8px 28px;
+    }
+    .showcase-text h1{
+        font-size: 50px;
+    }
+    .showcase-text p{
+        font-size: 13px;
+    }
+    .showcase-text a[href="course.html"]{
+        font-size: 13px;
+    }
+
+
+    .employ{
+        height: auto;
+    }
+    .employ .container.grid{
+        grid-template-columns: 1fr;
+        padding-left: 35px;
+    }
+    .employ-text{
+        height: 60%;
+        margin-top: 100px;
+        margin-bottom: 40px;
+    }
+    .employ-text h1{
+        font-size: 35px;
+    }
+    .employ-text p{
+        font-size: 13px;
+    }
+    .employ-text a[href="course.html"]{
+        font-size: 13px;
+    }
+    .employ .container img{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        padding-left: 35px;
+    }
+    .third{
+        height: auto;
+    }
+    .third .container{
+    }
+    .third .container h1{
+        font-size: 35px;
+    }
+    .third p{
+        font-size: 13px;
+    }
+
+
+    .employees{
+        height: auto;
+    }
+    .employees .container .grid{
+        margin-bottom: 50px;
+    }
+    .img-1,
+    .img-2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .employees img{
+        width: 50%;
+    }
+    .employees h3{
+        font-size: 18px;
+    }
+    .employees h5{
+        font-size: 12px;
+    }
+    .employees p{
+        font-size: 13px;
+    }
+
+
+    .career{
+        height: auto;
+    }
+    .career .container{
+        padding: 50px 0;
+    }
+    .career img{
+        width: 40%;
+    }
+    .career .h3{
+        color: #e4e4e4;
+        font-size: 20px;
+        padding: 80px 20px;
+        line-height: 1.5;
+        margin: 5px 10px;
+    }
+    .img-text{
+        display: block;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .img-text h3{
+        font-size: 15px;
+    }
+    .img-text p{
+        font-size: 11px;
+        display: inline;
+        text-align: center;
+    }
+
+
+    .world{
+        height: 450px;
+    }
+    .world h1{
+        font-size: 35px;
+    }
+    .world p{
+        font-size: 13px;
+    }
+
+    .talk{
+
+    }
+    .talk .container{
+    }
+    .talk .small-container{
+        margin: 40px;
+        padding: 120px 0;
+    }
+    .talk h1{
+        font-size: 35px;
+    }
+    .talk .btn{
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    .white{
+        font-size: 13px;
+    }
+    .blue{
+        font-size: 13px;
+    }
+
+
+    footer{
+        height: auto;
+    }
+    footer .container{
+    }
+    footer .small-container{
+        display: block;
+        padding-left: 50px;
+    }
+    .footer p a{
+        font-size: 13px;
+    }
+    .footer{
+        padding: 40px;
+    }
+    .footer li a{
+        font-size: 13px;
+    }
+}
+@media(max-width: 500px){
+    .footer li a{
+        font-size: 13px;
+        padding-left: 100px;
+    }
+}
